@@ -16,3 +16,162 @@ a:active, a:hover {text-decoration:none}
 address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 table {width:100%; /*border-collapse:collapse;*/ border-spacing:0;}
 caption, legend{font-size:0; line-height:0; height:0}
+
+
+
+
+.inner {
+       display: flex;
+       flex-wrap: wrap;
+       padding: 50px 0;
+       width: 100%;
+       max-width: 1200px;
+       margin: 0 auto;
+}
+.fixed_left {
+       width: 40%;
+       background: #29303B;
+       color: #fff;
+       padding: 30px;
+}
+.fixed_right {
+       width: calc(60% - 20px);
+       
+       border: solid #29303B;
+       border-width: 2px 2px 2px 0;
+}
+.fixed_right dl {
+       padding: 20px;
+}
+.fixed_left dt{
+       font-size: 20px;
+       font-weight: bold;
+       border-bottom: 2px solid #fff;
+       padding-bottom: 5px;
+       margin-bottom: 10px;
+}
+.tmi dd {
+       font-size: 16px;
+}
+.tmi dd .main_title {
+       font-weight: bold;
+}
+
+
+.fixed_left > .title {
+       margin-bottom: 10px;
+}
+.sub_title {
+       font-size: 16px;
+       margin-bottom: 20px;
+}
+
+.tmi .line {
+       display: block;
+       font-size: 14px;
+       padding-left: 50px;
+       text-decoration: line-through;
+}
+
+
+.about {
+       margin-top: 10px;
+}
+.about dd {
+       font-size: 16px;
+       display: flex;
+       margin-bottom: 10px;
+       align-items: center;
+}
+.about .title {
+       position: relative;
+       display: inline-block;
+       width: 20%;
+}
+.about .title:after {
+       content: ':';
+       position: absolute;
+       top: 0;
+       right: 15px;
+       display: inline-block;
+       width: 5px;
+       color: #fff;
+       
+}
+.hide {
+       width: 70%;
+       display: inline-block;
+       color: #363953;
+       background: #363953;
+}
+
+
+
+
+
+
+
+
+
+
+
+.right {
+       border-bottom: 2px solid #29303B;
+       
+}
+.right:hover dt{
+       background: #001167;
+       color: #fff;
+}
+.right dt{
+       display: inline-block;
+       font-size: 18px;
+       font-weight: bold;
+       background: #fff;
+       color: #001167;
+       margin-bottom: 10px;
+       vertical-align: top;
+       padding: 0 10px;
+       transition: all 0.4s;
+}
+.right dd span{
+       font-size: 16px;
+       font-weight: bold;
+       
+       display: inline-block;
+       vertical-align: top;
+}
+.right dd {
+       font-size: 16px;
+}
+.fixed_right .line {
+       display: inline-block;
+       text-decoration: line-through;
+       font-size: 12px;
+       vertical-align: text-bottom
+       
+}
+
+
+.left dt{
+       display: inline-block;
+       font-size: 18px;
+       font-weight: bold;
+       color: #29303B;
+       background: #fff;
+       vertical-align: top;
+       padding: 0 10px;
+       margin-bottom: 10px;
+       transition: all 0.4s;
+}
+.left:hover dt{
+       background: #29303B;
+       color: #fff;
+}
+.left .bold {
+       font-weight: bold;
+}
+.left dd {
+       line-height: 24px;
+       font-size: 14px;
+}
